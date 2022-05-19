@@ -25,12 +25,16 @@ function App() {
 
   const handButtonClick = (value) =>{
     console.log(value)
-  } ;
+  };
+
+  const styleCalcu ={
+    width: "60%",
+  };
 
   return (
     <center>
     
-    <div className="App" style={{width: "140px"}}>
+    <div className="App" style={styleCalcu}>
     <label style={{padding: "120px"}}>0</label><br/>
       {
         buttons.map(buttonProps => 

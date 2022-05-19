@@ -9,29 +9,29 @@
 .number {
     background-color: #615868;
     color: white;
-    height: 30px;
-    width: 30px;
+    height: 2rem;
+    width: 24%;
 }
 
 .number0{
     background-color: #615868;
     color: white;
-    height: 30px;
-    width: 60px;
+    height: 2rem;
+    width: 48%;
 }
 
 .symbol {
     background-color: #423A41;
     color: white;
-    height: 30px;
-    width: 30px;
+    height: 2rem;
+    width: 24%;
 }
 
 .symbolAccent {
     background-color: #FF9429;
     color: white;
-    height: 30px;
-    width: 30px;
+    height: 2rem;
+    width: 24%;
 }
 
 
