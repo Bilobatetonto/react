@@ -30,12 +30,19 @@ function App() {
   const styleCalcu ={
     width: "60%",
   };
+  const stylePantalla = {
+    textAlign: "right",
+    position: "relative",
+    left: "44%",
+    fontSize: "larger",
+    fontFamily: "courier new",
+  };
 
   return (
     <center>
     
     <div className="App" style={styleCalcu}>
-    <label style={{padding: "120px"}}>0</label><br/>
+    <label style={stylePantalla}>0</label><br/>
       {
         buttons.map(buttonProps => 
         <Button {...buttonProps} 
