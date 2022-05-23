@@ -1,4 +1,5 @@
 import Button from "./components/Button/Button";
+var valor;
 
 function App() {
   const buttons = [
@@ -24,7 +25,12 @@ function App() {
   ];
 
   const handButtonClick = (value) =>{
-    console.log(value)
+    document.getElementById("pantalla").innerHTML = (value);
+    console.log("valor: " + valor);
+    console.log(value);
+    var concatenar = `${value} ${valor}`;
+    console.log(concatenar);
+    valor = document.getElementById("pantalla").innerHTML = (value);
   };
 
   const styleCalcu ={
@@ -42,7 +48,7 @@ function App() {
     <center>
     
     <div className="App" style={styleCalcu}>
-    <label style={stylePantalla}>0</label><br/>
+    <label id="pantalla" style={stylePantalla}>0</label><br/>
       {
         buttons.map(buttonProps => 
         <Button {...buttonProps} 

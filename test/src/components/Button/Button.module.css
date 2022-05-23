@@ -18,6 +18,7 @@
     color: white;
     height: 2rem;
     width: 48%;
+    border-bottom-left-radius: 2px;
 }
 
 .symbol {
