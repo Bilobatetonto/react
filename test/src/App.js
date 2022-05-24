@@ -1,5 +1,6 @@
 import Button from "./components/Button/Button";
-var valor;
+var bandera=false;
+var valorPantalla;
 
 function App() {
   const buttons = [
@@ -25,21 +26,19 @@ function App() {
   ];
 
   const handButtonClick = (value) =>{
-    document.getElementById("pantalla").innerHTML = (value);
-    console.log("valor: " + valor);
-    console.log(value);
-    var concatenar = `${value} ${valor}`;
-    console.log(concatenar);
-    valor = document.getElementById("pantalla").innerHTML = (value);
+    if (bandera) {
+      valorPantalla = `${valorPantalla}${value}`;
+    }else{
+      valorPantalla=value;
+    }
+    document.getElementById("pantalla").innerHTML = (valorPantalla);
+    bandera=true;
   };
 
-  const styleCalcu ={
+  const styleCalculadora ={
     width: "60%",
   };
   const stylePantalla = {
-    textAlign: "right",
-    position: "relative",
-    left: "44%",
     fontSize: "larger",
     fontFamily: "courier new",
   };
@@ -47,7 +46,7 @@ function App() {
   return (
     <center>
     
-    <div className="App" style={styleCalcu}>
+    <div className="App" style={styleCalculadora}>
     <label id="pantalla" style={stylePantalla}>0</label><br/>
       {
         buttons.map(buttonProps => 
